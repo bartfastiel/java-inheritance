@@ -1,10 +1,11 @@
 package org.example;
 
-public class Screen extends ElectronicDevice {
+public class Screen extends ElectronicDevice implements CanBeHifi {
 
     private int resolutionX;
     private int resolutionY;
     private int inch;
+    private boolean hifi;
 
     public int getResolutionX() {
         return resolutionX;
@@ -28,5 +29,14 @@ public class Screen extends ElectronicDevice {
 
     public void setInch(int inch) {
         this.inch = inch;
+    }
+
+    public boolean getHifi() {
+        return hifi;
+    }
+
+    @Override
+    public void setHifi(boolean hifi) {
+        this.hifi = hifi;
     }
 }

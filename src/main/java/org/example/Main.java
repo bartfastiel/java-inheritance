@@ -21,6 +21,10 @@ public class Main {
 
         printElectronicDevice(smartTv);
 
+        CanBeHifi something = new HeadSet();
+        something.setHifi(true);
+
+
     }
 
     public static void printElectronicDevice(ElectronicDevice a) {
